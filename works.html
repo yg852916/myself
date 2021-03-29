@@ -10,49 +10,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
-    <style>
-        .bg-none {
-            background: none;
-        }
-
-        .myNavbar div {
-            width: 200px;
-        }
-
-        .myNavbar li {
-            margin-left: auto;
-            margin-right: auto;
-            width: 60px;
-            border-radius: 30%;
-            transform: skewX(30deg);
-            border: 3px solid rgba(28, 194, 245, 0) !important;
-        }
-
-        .myNavbar li a {
-            transform: skewX(-30deg);
-        }
-
-        .myNavbar li:hover {
-            transition: 0.3s;
-            width: 200px;
-            border: 3px solid rgb(28, 194, 245) !important;
-            background-color: rgb(0, 0, 0);
-        }
-
-        #avatar {
-            border-radius: 100%;
-            padding: 6px;
-            border: solid 1px rgba(255, 255, 255, 0.25);
-            background-color: rgba(255, 255, 255, 0.075);
-        }
-
-
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <!-- Animation -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/myCss.css">
 
 
     <META http-equiv="Page-Enter" content="revealTrans(Transition=12,Duration=5.000)">
+
+
 </head>
 
 <body style="font-family: 'Noto Sans TC', sans-serif;height: 2000px;background-color: rgb(37, 8, 92);">
@@ -60,20 +28,25 @@
     <div style="background: url(images/bg01.jpg) no-repeat;background-size: cover;">
         <div class="container">
             <!-- content -->
-            <div style="padding-top: 10%;" class="text-center jumbotron text-white bg-none m-1">
+            <div style="padding-top: 10%;" class="text-center jumbotron text-white bg-none m-0">
                 <!-- header text -->
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img id="avatar" src="images/head.jpg" class="align-self-center mr-3" alt="...">
+                        <img id="avatar" src="images/head.jpg" class="align-self-center mr-3 animated rotateIn"
+                            alt="...">
                     </div>
                     <div class="col-12 col-sm-6 col-md-7 col-lg-8">
-                        <h1 class="display-4" style="font-weight: 600;">Hey, I'm 羅仁智</h1>
+                        <h1 class="display-4 animated fadeInDownBig"
+                            style="font-size: 40px;font-weight: 600;color: rgb(28, 194, 245);">Hey,
+                            I'm &ensp;<span style="font-size: 50px;color: white;">羅仁智</span></h1>
 
                         <hr style="border: 1px solid rgb(28, 194, 245);">
-                        <p>The purpose of this website is to introduce myself, I hope this will make you understand me
+                        <p class="animated fadeInLeftBig">The purpose of this website is to introduce myself, I hope
+                            this will make you understand me
                             better, thank you for watching.
                         </p>
-                        <footer style="font-size: 20px;color: rgb(0, 0, 0);" class="blockquote-footer">畢業於 國立虎尾科技大學
+                        <footer style="font-size: 20px;color: rgb(0, 0, 0);"
+                            class="blockquote-footer animated fadeInRightBig">畢業於 國立虎尾科技大學
                             資訊工程系 <cite title="Source Title">2021/06 </cite></footer>
 
                     </div>
@@ -88,26 +61,26 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="myNavbar mr-auto ml-auto navbar-nav">
                             <div>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home <span
+                                            class="sr-only">(current)</span></a>
                                 </li>
                             </div>
                             <div>
-                                <li class="nav-item">
+                                <li class="nav-item active myNavbar-active">
                                     <a class="nav-link" href="works.html">Works</a>
                                 </li>
                             </div>
                             <div>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
+                                    <a class="nav-link" href="grades.html">在校成績</a>
                                 </li>
                             </div>
                             <div>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
+                                    <a class="nav-link" href="certificate.html">證照</a>
                                 </li>
                             </div>
-
                         </ul>
                     </div>
                 </nav>
@@ -115,10 +88,142 @@
         </div>
     </div>
 
+    <!-- content -->
+
+    <div class="container pb-5 pt-5">
+        <!--graduation work-->
+        <div class="alert alert-light" role="alert">
+            <h1 class="card-title text-center">行李箱智能底座 ( <span style="color: rgba(255, 0, 0, 0.705);">OpenCV
+                    開發</span> ) 畢業專題 <span style="font-size: 35px;color: orange;">佳作</span></h1>
+        </div>
+
+        <div class="card my-5 border-0" style="background-color: rgb(214, 210, 210);">
+            <!-- 輪播 -->
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade mx-3 my-3" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/topic1.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/topic2.PNG" class="d-block w-100" alt="...">
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- 輪播 -->
+            <div class="card-body">
+
+                <p class="px-5 card-text">
+                    旅遊小跟班將以行李箱為主體而外加上一個智能底座，讓一般的行李箱也能轉變成智慧行李箱。旅遊小跟班底部裝有<span
+                        style="background-color: rgba(255, 166, 0, 0.514);">攝像頭</span>，透過<span
+                        style="background-color: rgba(255, 166, 0, 0.514);">影像辨識</span>去跟隨目標，並運用<span
+                        style="background-color: rgba(255, 166, 0, 0.514);">手勢辨識</span>去執行或結束自動跟隨的命令，也能將攝像頭的畫面經過RTSP串流協定即時的傳送到使用者手機上，拿起手機即可遠端遙控行李箱。APP而外提供備忘錄的功能，將旅行中的大小事記錄到手機中，也能預估旅遊當天的天氣狀況以便提前準備雨具，以及檢視個人裝備是否帶齊。
+                    <br><br>組別--我主要負責( <span style="color: rgba(255, 0, 0, 0.705);">影像辨識方面</span> )
+                </p>
+
+                <div class="px-5 row">
+                    <div class="col-12 col-md-3">
+                            功能說明：
+                            <br>1.手勢控制移動
+                            <br>2.自動跟隨目標
+                            <br>3.APP附加功能
+                    </div>
+                    <div class="col-12 col-md-4">
+                            系統環境：
+                            <br>軟體: Opencv、android studio
+                            <br>硬體：樹莓派
+                            <br>通訊設備/協定:WIFI
+
+                    </div>
+                </div>
+ 
+                <p class="text-center">
 
 
 
-    
+
+                </p>
+                <div class="card-footer text-right bg-none border-0">
+                    <div class="card-footer text-right bg-none border-0">
+                        <a href="download/海報.pdf" target="_blank" class="btn text-secondary">海報下載.pdf</a>
+                        <a href="download/完整報告.pdf" target="_blank" class="btn text-secondary">完整報告下載.pdf</a>
+                        <a href="https://www.youtube.com/watch?v=LeYw3K42OSA&ab_channel=%E7%BE%85%E4%BB%81%E6%99%BA"
+                            target="_blank" class="btn btn-outline-info">觀看影片</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- game design -->
+        <div class="card my-5 border-0" style="background-color: rgb(214, 210, 210);">
+            <!-- 輪播 -->
+            <div id="carouselExampleIndicators2" class="carousel slide carousel-fade mx-3 my-3" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/game1.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/game2.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/game3.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/game4.PNG" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- 輪播 -->
+            <div class="card-body">
+                <h3 class="card-title text-center">2D 戰機遊戲 (<span style="color: rgba(255, 0, 0, 0.705);">Unity
+                        開發</span>)</h3>
+                <p class="card-text px-5">主角會自動射擊子彈，操控主角閃避敵人與砲火，怪物一波一波來襲將最後BOSS大蜈蚣擊倒即可獲勝。</p>
+                <div class="card-footer text-right bg-none border-0">
+                    <a href="https://drive.google.com/file/d/11DFaz4FMetoltjD1PAI0BgbMBRWv6mis/view?usp=sharing"
+                        target="_blank" class="btn text-secondary">遊戲執行檔下載</a>
+                    <a href="#" class="btn btn-outline-info">觀看影片</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
 
 
     <!-- Optional JavaScript -->
@@ -133,6 +238,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+
+
 </body>
 
 </html>
