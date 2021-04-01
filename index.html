@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="css/myCss.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         /* Grow Rotate */
         .hvr-grow-rotate {
@@ -192,7 +194,7 @@
         <!--Photo-->
         <div style="border-top: 2px solid white;" class="container mt-3 pt-5">
             <div class="card-columns">
-                <div class="mb-5 card bg-none home-photo" style="width: 350px;">
+                <div class="mb-5 card bg-none home-photo" style="width: 350px;"  data-aos="flip-down">
                     <!-- Button trigger modal -->
                     <img src="images/01.jpg" class="card-img-top" alt="..." type="button" class="btn btn-primary"
                         data-toggle="modal" data-target="#photo1">
@@ -209,7 +211,7 @@
                         <p class="card-text">與狗的合照</p>
                     </div>
                 </div>
-                <div class="mb-5 card bg-none home-photo" style="width: 350px;">
+                <div class="mb-5 card bg-none home-photo" style="width: 350px;"  data-aos="flip-down">
                     <!-- Button trigger modal -->
                     <img src="images/02.jpg" class="card-img-top" alt="..." type="button" class="btn btn-primary"
                         data-toggle="modal" data-target="#photo2">
@@ -226,7 +228,7 @@
                         <p class="card-text">與姪女的合照</p>
                     </div>
                 </div>
-                <div class="mb-5 card bg-none home-photo" style="width: 350px;">
+                <div class="mb-5 card bg-none home-photo" style="width: 350px;"  data-aos="flip-down">
                     <!-- Button trigger modal -->
                     <img src="images/03.jpg" class="card-img-top" alt="..." type="button" class="btn btn-primary"
                         data-toggle="modal" data-target="#photo3">
@@ -243,7 +245,7 @@
                         <p class="card-text">與倉鼠的回憶</p>
                     </div>
                 </div>
-                <div class="mb-5 card bg-none home-photo" style="width: 350px;">
+                <div class="mb-5 card bg-none home-photo" style="width: 350px;" data-aos="flip-down">
                     <!-- Button trigger modal -->
                     <img src="images/06.jpg" class="card-img-top" alt="..." type="button" class="btn btn-primary"
                         data-toggle="modal" data-target="#photo4">
@@ -260,7 +262,7 @@
                         <p class="card-text">國中的我(左)</p>
                     </div>
                 </div>
-                <div class="mb-5 card bg-none home-photo" style="width: 350px;">
+                <div class="mb-5 card bg-none home-photo" style="width: 350px;" data-aos="flip-down">
                     <!-- Button trigger modal -->
                     <img src="images/08.jpg" class="card-img-top" alt="..." type="button" class="btn btn-primary"
                         data-toggle="modal" data-target="#photo5">
@@ -296,6 +298,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- AOS Animtaion -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

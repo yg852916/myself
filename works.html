@@ -16,7 +16,8 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="css/myCss.css">
-
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <META http-equiv="Page-Enter" content="revealTrans(Transition=12,Duration=5.000)">
 
@@ -92,11 +93,11 @@
 
     <div class="container pb-5 pt-5">
         <!--graduation work-->
-        <div class="alert alert-light" role="alert">
+        <div class="alert alert-light" role="alert" data-aos="flip-down" data-aos-duration="2000">
             <h1 class="card-title text-center">行李箱智能底座 ( <span style="color: rgba(255, 0, 0, 0.705);">OpenCV
                     開發</span> ) 畢業專題 <span style="font-size: 35px;color: orange;">佳作</span></h1>
         </div>
-        <div class="card mb-5 border-0" style="background-color: rgb(214, 210, 210);">
+        <div class="card mb-5 border-0" style="background-color: rgb(214, 210, 210);" data-aos="flip-down" data-aos-duration="2000">
             <!-- 輪播 -->
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade mx-3 my-3" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -122,7 +123,7 @@
                 </a>
             </div>
             <!-- 輪播 -->
-            <div class="card-body">
+            <div class="card-body" >
 
                 <p class="px-5 card-text">
                     旅遊小跟班將以行李箱為主體而外加上一個智能底座，讓一般的行李箱也能轉變成智慧行李箱。旅遊小跟班底部裝有<span
@@ -134,20 +135,20 @@
 
                 <div class="px-5 row">
                     <div class="col-12 col-md-3">
-                            功能說明：
-                            <br>1.手勢控制移動
-                            <br>2.自動跟隨目標
-                            <br>3.APP附加功能
+                        功能說明：
+                        <br>1.手勢控制移動
+                        <br>2.自動跟隨目標
+                        <br>3.APP附加功能
                     </div>
                     <div class="col-12 col-md-4">
-                            系統環境：
-                            <br>軟體: Opencv、android studio
-                            <br>硬體：樹莓派
-                            <br>通訊設備/協定:WIFI
+                        系統環境：
+                        <br>軟體: Opencv、android studio
+                        <br>硬體：樹莓派
+                        <br>通訊設備/協定:WIFI
 
                     </div>
                 </div>
- 
+
                 <p class="text-center">
 
                 </p>
@@ -170,11 +171,12 @@
 
         </div>
         <!-- game design -->
-        <div class="alert alert-light mt-5" role="alert">
+        <div class="alert alert-light mt-5" role="alert" data-aos="flip-down" data-aos-duration="2000">
             <h3 class="card-title text-center">2D 戰機遊戲 (<span style="color: rgba(255, 0, 0, 0.705);">Unity
-                開發</span>)</h3></h1>
+                    開發</span>)</h3>
+            </h1>
         </div>
-        <div class="card mb-5 border-0" style="background-color: rgb(214, 210, 210);">
+        <div class="card mb-5 border-0" style="background-color: rgb(214, 210, 210);" data-aos="flip-down" data-aos-duration="2000">
             <!-- 輪播 -->
             <div id="carouselExampleIndicators2" class="carousel slide carousel-fade mx-3 my-3" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -238,7 +240,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <!-- AOS Animtaion -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
 </body>
