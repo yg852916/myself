@@ -20,7 +20,19 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <META http-equiv="Page-Enter" content="revealTrans(Transition=12,Duration=5.000)">
+    <style>
+        .gotop {
 
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            padding: 10px 15px;
+            font-size: 20px;
+            background: #777;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
 
 </head>
 
@@ -63,13 +75,12 @@
                         <ul class="myNavbar mr-auto ml-auto navbar-nav">
                             <div>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home <span
-                                            class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="index.html">關於<span class="sr-only">(current)</span></a>
                                 </li>
                             </div>
                             <div>
                                 <li class="nav-item active myNavbar-active">
-                                    <a class="nav-link" href="works.html">Works</a>
+                                    <a class="nav-link" href="works.html">作品集</a>
                                 </li>
                             </div>
                             <div>
@@ -91,13 +102,26 @@
 
     <!-- content -->
 
-    <div class="container pb-5 pt-5">
+    <div class="container alert alert-dark">
+        <a class="alert alert-info p-2" style="line-height: 50px;font-size: 1.5vmin;" href="#work1">影像辨識</a>
+        <a class="alert alert-info p-2" style="line-height: 50px;font-size: 1.5vmin;" href="#work2">Unity2D戰機遊戲</a>
+        <a class="alert alert-info p-2" style="line-height: 50px;font-size: 1.5vmin;" href="#work3">Unity3D多人連線槍戰遊戲</a>
+        <a class="alert alert-info p-2" style="line-height: 50px;font-size: 1.5vmin;" href="#work4">Unity自製遊戲教學影片</a>
+        <a class="alert alert-info p-2" style="line-height: 50px;font-size: 1.5vmin;" href="#work5">(網頁開發)物品借用與登錄系統</a>
+        <a class="alert alert-info p-2" style="line-height: 50px;font-size: 1.5vmin;" href="#work6">(網頁開發)多拉A夢幼兒園</a>
+
+    </div>
+
+    <!-- work -->
+    <div id="work1" class="container-fluid alert alert-light" role="alert" data-aos="flip-down" data-aos-duration="2000"
+        data-aos-once="true">
+        <h1 class="card-title text-center">( <span style="color: rgba(255, 0, 0, 0.705);">OpenCV
+                開發</span> )行李箱智能底座 畢業專題 <span style="font-size: 35px;color: orange;">佳作</span></h1>
+    </div>
+    <div class="container pb-5">
         <!--graduation work-->
-        <div class="alert alert-light" role="alert" data-aos="flip-down" data-aos-duration="2000">
-            <h1 class="card-title text-center">行李箱智能底座 ( <span style="color: rgba(255, 0, 0, 0.705);">OpenCV
-                    開發</span> ) 畢業專題 <span style="font-size: 35px;color: orange;">佳作</span></h1>
-        </div>
-        <div class="card mb-5 border-0" style="background-color: rgb(214, 210, 210);" data-aos="flip-down" data-aos-duration="2000">
+        <div class="card mb-5 border-0" style="background-color: rgb(214, 210, 210);" data-aos="flip-down"
+            data-aos-duration="2000" data-aos-once="true">
             <!-- 輪播 -->
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade mx-3 my-3" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -123,7 +147,7 @@
                 </a>
             </div>
             <!-- 輪播 -->
-            <div class="card-body" >
+            <div class="card-body">
 
                 <p class="px-5 card-text">
                     旅遊小跟班將以行李箱為主體而外加上一個智能底座，讓一般的行李箱也能轉變成智慧行李箱。旅遊小跟班底部裝有<span
@@ -162,21 +186,23 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- End work -->
 
 
 
-
-        <!-- 分隔線 -->
-        <div class="mx-auto" style="border-top: 20px brown solid;width: 80%;">
-
-        </div>
+    <!-- work -->
+    <div id="work2" class="container-fluid alert alert-light mt-5" role="alert" data-aos="flip-down"
+        data-aos-duration="2000" data-aos-once="true">
+        <h3 class="card-title text-center">(<span style="color: rgba(255, 0, 0, 0.705);">Unity
+                開發</span>)2D 戰機遊戲 </h3>
+        </h1>
+    </div>
+    <div class="container">
         <!-- game design -->
-        <div class="alert alert-light mt-5" role="alert" data-aos="flip-down" data-aos-duration="2000">
-            <h3 class="card-title text-center">2D 戰機遊戲 (<span style="color: rgba(255, 0, 0, 0.705);">Unity
-                    開發</span>)</h3>
-            </h1>
-        </div>
-        <div class="card mb-5 border-0" style="background-color: rgb(214, 210, 210);" data-aos="flip-down" data-aos-duration="2000">
+
+        <div class="card mb-5 border-0" style="background-color: rgb(214, 210, 210);" data-aos="flip-down"
+            data-aos-duration="2000" data-aos-once="true">
             <!-- 輪播 -->
             <div id="carouselExampleIndicators2" class="carousel slide carousel-fade mx-3 my-3" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -210,9 +236,46 @@
             </div>
             <!-- 輪播 -->
             <div class="card-body">
+                <div class="px-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <a style="color:rgb(17, 172, 120)">練習模式</a>
+                            <p>
+                                &ensp; 1.玩家血量無限
+                                <br>&ensp; 2.點擊按鈕，產生怪物進行練習
+                            </p>
+                            <a style="color:rgb(17, 84, 172)">普通模式</a>
+                            <p>
+                                &ensp; 1.玩家血量正常
+                            </p>
+                            <a style="color:rgb(182, 67, 21)">困難模式</a>
+                            <p>
+                                &ensp; 1.怪物數量10倍
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <a>第1波攻勢一<span style="color:rgb(17, 84, 172)">南瓜怪</span></a>
+                            <br><a>第2波攻勢一<span style="color:rgb(17, 84, 172)">劍靈</span></a>
+                            <br><a>第3波攻勢一<span style="color:rgb(17, 84, 172)">怨靈</span></a>
+                            <br><a>第4波攻勢一<span style="color:rgb(17, 84, 172)">渾沌水晶</span></a>
+                            <br><a>第5波攻勢一<span style="color:rgb(17, 84, 172)">小精靈</span></a>
+                            <br><a>第6波攻勢一<span style="color:rgb(17, 84, 172)">終結者骷髏</span></a>
+                            <br><a>第7波攻勢一<span style="color:rgb(17, 84, 172)">漫遊之眼</span></a>
+                            <br><a>第8波攻勢一<span style="color:rgb(17, 84, 172)">神意之眼</span></a>
+                            <br><a>第9波攻勢一<span style="color:rgb(17, 84, 172)">紫晶水母</span></a>
+                            <br><a>Boss攻勢一<span style="color:rgb(17, 84, 172)">吞噬者蜈蚣</span></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>主角會自動射擊子彈，撿取子彈道具可增加射擊子彈數量，撿取技能道具可拖曳施放招式。
+                        大絕CD結束，可點擊施放大絕。
+                        <br>操控主角閃避敵人與砲火，怪物一波一波來襲將最後BOSS大蜈蚣擊倒即可獲勝。
+                    </p>
+                </div>
 
-                <p class="card-text px-5">主角會自動射擊子彈，操控主角閃避敵人與砲火，怪物一波一波來襲將最後BOSS大蜈蚣擊倒即可獲勝。</p>
                 <div class="card-footer text-right bg-none border-0">
+                    <a href="https://drive.google.com/file/d/1zvX4TxelpdKPe2mP58Yb2cqqvxiztqt3/view?usp=sharing"
+                        target="_blank" class="btn text-secondary">詳細攻略</a>
                     <a href="https://drive.google.com/file/d/11DFaz4FMetoltjD1PAI0BgbMBRWv6mis/view?usp=sharing"
                         target="_blank" class="btn text-secondary">遊戲執行檔下載</a>
                     <a href="https://www.youtube.com/watch?v=nCm3hU1BN80&ab_channel=%E4%BB%BB%E6%88%91%E8%A1%8C"
@@ -222,19 +285,363 @@
         </div>
 
     </div>
+    <!-- End work -->
+
+    <!-- work -->
+    <div id="work3" class="container-fluid alert alert-light mt-5" role="alert" data-aos="flip-down"
+        data-aos-duration="2000" data-aos-once="true">
+        <h3 class="card-title text-center">(<span style="color: rgba(255, 0, 0, 0.705);">Unity
+                開發</span>)3D 多人連線槍戰遊戲<a style="font-size: 20px;">一 開發中</a></h3>
+        </h1>
+    </div>
+    <div class="container">
+        <!-- game design -->
+
+        <div class="card mb-5 border-0" style="background-color: rgb(214, 210, 210);" data-aos="flip-down"
+            data-aos-duration="2000" data-aos-once="true">
+            <!-- 輪播 -->
+            <div id="carouselExampleIndicators5" class="carousel slide carousel-fade mx-3 my-3" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/work5-1.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/work5-2.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/work5-3.PNG" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- 輪播 -->
+            <div class="card-body">
+                <div class="px-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <p style="color: chocolate;font-size: 20px;">目前進度：</p>
+                            <p style="padding-left: 5%;">
+                                玩家
+                                <br>移動、奔跑、跳躍、蹲俯、滑步
+                                <br>道具
+                                <br>可使用生命藥水恢復
+                                <br>槍
+                                <br>可以撿槍、丟槍、開槍
+                                <br>連線
+                                <br>玩家可一起加入遊戲廝殺
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+
+                        </div>
+                    </div>
+                </div>
 
 
+            </div>
+        </div>
+
+    </div>
+    <!-- End work -->
+
+    <!-- work -->
+    <div id="work4" class="container-fluid alert alert-light mt-5" role="alert" data-aos="flip-down"
+        data-aos-duration="2000" data-aos-once="true">
+        <h3 class="card-title text-center">(<span style="color: rgba(255, 0, 0, 0.705);">Unity
+                開發</span>)自製 遊戲教學影片<a style="font-size: 20px;">一 程序更新中</a></h3>
+        </h1>
+    </div>
+    <div class="container">
+        <!-- game design -->
+
+        <div class="card mb-5 border-0" style="background-color: rgb(214, 210, 210);" data-aos="flip-down"
+            data-aos-duration="2000" data-aos-once="true">
+            <!-- 輪播 -->
+            <div id="carouselExampleIndicators6" class="carousel slide carousel-fade mx-3 my-3" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/work6-1.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/work6-2.PNG" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- 輪播 -->
+            <div class="card-body">
+                <div class="px-5">
+
+                    <p style="color: chocolate;font-size: 20px;">內容：</p>
+                    <p style="padding-left: 5%;">
+                        在開發遊戲中，順便拍下影片記錄過程，順便給一些有興趣的人學習!!
+                        <br>主要是第三人稱遊戲槍戰內容。
+                        <br>Unity Multiple Game 01 (角色建立、移動)
+                        <br>Unity Multiple Game 02 (跳躍、第三人稱視角)
+                        <br>Unity Multiple Game 03 (不使用character controller，進行跳躍移動 )
+                        <br>Unity Multiple Game 04 (Animator Rigging 控制握槍姿勢)
+                        <br>Unity Multiple Game 05 (撿槍與丟槍 使用Raycast方式)
+                        <br>Unity Multiple Game 06 (控制槍、上半身的瞄準，使用multi-Aim-constraint、multi-position-constraint)
+                    </p>
+
+                </div>
+                <div class="card-footer text-right bg-none border-0">
+                    <div class="card-footer text-right bg-none border-0">
+                        <a href="https://youtube.com/playlist?list=PL3gk7bJ_-wDcxM7H0WrsGy2locv3Ansdl" target="_blank"
+                            class="btn btn-outline-info">觀看影片</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- End work -->
 
 
+    <!-- work -->
+    <div id="work5" class="container-fluid alert alert-light mt-5" role="alert" data-aos="flip-down"
+        data-aos-duration="2000" data-aos-once="true">
+        <h3 class="card-title text-center">(<span style="color: rgba(255, 0, 0, 0.705);">網頁開發</span>)物品借用與登錄系統
+            <span style="font-size: 18px;color: brown;">
+                HTML
+                PHP
+                MySQL
+                Bootstrap
+                javascript
+                css</span>
+        </h3>
+        </h1>
+    </div>
+    <div class="container">
+        <!-- game design -->
 
+        <div class="card mb-5 border-0" style="background-color: rgb(214, 210, 210);" data-aos="flip-down"
+            data-aos-duration="2000" data-aos-once="true">
+            <!-- 輪播 -->
+            <div id="carouselExampleIndicators3" class="carousel slide carousel-fade mx-3 my-3" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/work3-1.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/work3-2.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/work3-3.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/work3-4.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/work3-5.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/work3-6.PNG" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- 輪播 -->
+            <div class="card-body">
+                <div class="px-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <p style="color: chocolate;font-size: 20px;">功能介紹：</p>
+                            <p style="padding-left: 5%;">
+                                1.首頁瀏覽
+                                <br>2.物品列表查詢
+                                <br>3.填寫借用單
+                                <br>4.查看審核結果
+                                <br>5.管理者登入介面
+                                <br>&ensp;(1)審核
+                                <br>&ensp;(2)管理物品
+                                <br>&ensp;(3)查詢借用紀錄
+                                <br>&ensp;(4)查詢歸還紀錄
+                                <br>&ensp;(5)新增管理員
+                                <br>&ensp;(6)管理公告
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>
+                                <span style="color: chocolate;font-size: 20px;">提供測試管理者帳號</span>
+                                <br>帳號：104
+                                <br>密碼：104
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-footer text-right bg-none border-0">
+                    <a href="http://140.130.34.84/projs_109/10/home.php" target="_blank"
+                        class="btn text-secondary">網頁連結</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End work -->
+
+
+    <!-- work -->
+    <div id="work6" class="container-fluid alert alert-light mt-5" role="alert" data-aos="flip-down"
+        data-aos-duration="2000" data-aos-once="true">
+        <h3 class="card-title text-center">(<span style="color: rgba(255, 0, 0, 0.705);">網頁開發</span>)多拉A夢幼兒園
+            <span style="font-size: 18px;color: brown;">
+                HTML
+                Bootstrap
+                javascript
+                css</span>
+        </h3>
+        </h1>
+    </div>
+    <div class="container">
+        <!-- game design -->
+
+        <div class="card mb-5 border-0" style="background-color: rgb(214, 210, 210);" data-aos="flip-down"
+            data-aos-duration="2000" data-aos-once="true">
+            <!-- 輪播 -->
+            <div id="carouselExampleIndicators4" class="carousel slide carousel-fade mx-3 my-3" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators4" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators4" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/work4-1.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/work4-2.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/work4-3.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/work4-4.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/work4-5.PNG" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- 輪播 -->
+            <div class="card-body">
+                <div class="px-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <p style="color: chocolate;font-size: 20px;">功能介紹：</p>
+                            <p style="padding-left: 5%;">
+
+                                1.首頁瀏覽
+                                <br>&ensp;&ensp;(1)最新公告
+                                <br>&ensp;&ensp;(2)幼兒園新聞
+                                <br>2.關於我們
+                                <br>&ensp;&ensp;(1)教育理念
+                                <br>&ensp;&ensp;(2)校園介紹
+                                <br>&ensp;&ensp;(3)師資陣容
+                                <br>3.招生訊息
+                                <br>&ensp;&ensp;(1)招生訊息
+                                <br>&ensp;&ensp;(2)入學FAQ
+                                <br>&ensp;&ensp;(3)收退費辦法
+                                <br>4.教學課程
+                                <br>&ensp;&ensp;(1)生活實踐班
+                                <br>&ensp;&ensp;(2)專注力訓練
+                                <br>5.家長專區
+                                <br>&ensp;&ensp;(1)接送辦法
+                                <br>&ensp;&ensp;(2)聯絡我們
+                                <br>6.申請入學
+                                <br>7.活動相簿區
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-footer text-right bg-none border-0">
+                    <a href="https://yg852916.github.io/kindergarten/index.html" target="_blank"
+                        class="btn text-secondary">網頁連結</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End work -->
+
+    <a class="gotop" onclick="GoTop()">go top</a>
+
+    <script type="text/javascript">
+
+        //至頂功能
+        function GoTop() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 1000);
+
+        }
+
+    </script>
+    <!-- Gotop  -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>

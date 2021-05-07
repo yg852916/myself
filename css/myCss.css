@@ -102,6 +102,7 @@
     transform: skewX(-20deg);
 }
 .myLabelAnimation div:first-child:before{
+    
     content: "";
     position: absolute;
     z-index: -1;
@@ -110,19 +111,19 @@
     right: 0;
     bottom: 0;
     background: rgb(28, 194, 245);
-    -webkit-transform: scaleX(0);
+    /*-webkit-transform: scaleX(0);*/
     transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
+
+    transform-origin: 0 ;
+    /*-webkit-transition-property: transform;*/
+    /*transition-property: transform;*/
+    /*-webkit-transition-duration: 0.3s;*/
     transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+    /*-webkit-transition-timing-function: ease-out;*/
+    /*transition-timing-function: ease-out;*/
 }
 .myLabelAnimation:hover div:first-child:before {
-    -webkit-transform: scaleX(1) !important;
+    /*-webkit-transform: scaleX(1) !important;*/
     transform: scaleX(1) !important;
 }
 
