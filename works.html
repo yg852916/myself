@@ -1,0 +1,418 @@
+!
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        .myNavbar li {
+            background-color: rgba(102, 102, 102, 0.7);
+            font-family: 'Noto Sans TC', sans-serif;
+            border-radius: 0% !important;
+            font-size: 2vmin;
+            font-weight: bold;
+            color: white;
+        }
+
+        .myNavbar li a {
+            padding: 25px 50px !important;
+
+        }
+
+        .myNavbar li:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .myNavbar-active,
+        .myNavbar-active a {
+            background-color: white !important;
+            color: black !important;
+        }
+
+        #avatar {
+            width: 130px;
+            overflow: hidden;
+            border-radius: 100%;
+            padding: 3px;
+            border: solid 2px rgba(255, 255, 255, 0.25);
+        }
+
+        #avatar img {
+            border-radius: 100%;
+            width: 100%;
+        }
+
+        #avatar:hover img {
+            transition: 0.2s;
+            transform: scale(1.1);
+        }
+
+        .home-myIntroduction {
+            line-height: 30px;
+            font-weight: bold;
+        }
+
+        .home-myIntroduction-header {
+            border-bottom: 2px solid rgb(52, 83, 151);
+            width: 80%;
+            font-size: 30px;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+
+        .home-photo {
+            margin-top: 10px;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0) inset;
+            color: rgb(141, 136, 136);
+        }
+
+        .home-photo:hover {
+            background: rgba(75, 71, 71, 0.5);
+            box-shadow: 0px 0px 10px gold inset !important;
+            color: rgb(184, 179, 179);
+        }
+
+        .home-photo-border {
+            border-color: rgb(80, 75, 75);
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        .bg-none {
+            background: none;
+        }
+
+        .work {
+            font-size: 2vmin;
+            background-color: #353849;
+        }
+
+        .work img {
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        .work:hover img {
+            transform: scale(1.1) !important;
+        }
+
+        .works-link {
+            text-decoration: none !important;
+            color: rgb(187, 187, 187);
+            line-height: 80px;
+            font-weight: 700;
+        }
+
+        .works-link img {
+            height: 40px;
+            width: 40px;
+            border: 2px solid rgb(126, 126, 126);
+            border-radius: 100%;
+            padding: 5px 5px;
+        }
+
+        .works-link:hover {
+            color: white !important;
+        }
+
+        .works-link:hover img {
+            background-color: rgba(68, 68, 68, 0.65);
+        }
+    </style>
+</head>
+
+<body class="pb-5" style="background: url(images/home/home-bg1.jpg); background-size:cover;">
+
+    <!-- header -->
+    <div class="container-fluid col-12 col-md-9 mx-auto row" style="padding-top: 5%;">
+        <div class="col-12 col-lg-8">
+            <h1 style="color:white;font-weight: 700;font-size: 10vmin;margin-bottom: 3vmin;">This is my web!</h1>
+            <footer style="font-size: 20px;color: rgb(139, 139, 139);font-weight: bold;line-height: 40px;">Wishing
+                you
+                every second of your life is a happy one!!</footer>
+
+        </div>
+        <div class="col-12 col-lg-4 mt-auto mb-auto" style="text-align: center;">
+            <div
+                style="color: rgb(212, 211, 211);display: inline-block;font-size: 3vmin;font-weight: bold;vertical-align:middle;text-align: right;">
+                羅仁智
+                <br>
+                <span
+                    style="border-top: 2px dashed rgb(126, 125, 125);color: white;font-size: 2vmin;font-weight: 900;letter-spacing: 3px;">JULY
+                    11, 1998</span>
+            </div>
+            <div style="display: inline-block;vertical-align:middle;" id="avatar">
+                <img src="images/home/head.jpg" alt="...">
+            </div>
+            <footer
+                style="font-size: 20px;color: rgb(139, 139, 139);font-weight: bold;line-height: 40px;margin-bottom: 5vmin;"
+                class="blockquote-footer animated fadeInRightBig"><cite title="Source Title">畢業於 國立虎尾科技大學 <br>資訊工程系
+                    2021/06</cite></footer>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- My Nav -->
+    <div class="container-fluid col-12 col-md-9 mx-auto p-0">
+        <nav class="p-0 navbar navbar-expand-lg navbar-dark bg-none">
+            <button class="ml-auto navbar-toggler bg-secondary" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="background-color: rgba(102, 102, 102, 0.7);">
+                <ul class="myNavbar navbar-nav">
+                    <div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">關於<span class="sr-only">(current)</span></a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="nav-item myNavbar-active">
+                            <a class="nav-link" href="works.html">作品集</a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="grades.html">在校成績</a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="certificate.html">證照</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End My Nav -->
+
+
+    <!-- Main -->
+    <div class="container-fluid col-12 col-md-9 mx-auto p-0" style="background-color: white;color: rgb(214, 214, 214);">
+        <!-- basic information -->
+        <div
+            style="height: 50px;background: linear-gradient(to right bottom,white 0% ,white 50.5% ,#2e3141 50%, #2e3141 100%);">
+        </div>
+        <div class="row m-0 py-4 justify-content-center" style="background-color: #2e3141;">
+            <!-- Works -->
+            <div class="col-12 col-lg-6" style="padding: 5% 5%; display: flex; ">
+                <div class="work" style="border-radius: 7px;overflow: hidden;">
+                    <div class="text-center">September, 2019 ~ September, 2020</div>
+                    <img src="images/works/topic2.PNG" alt="">
+
+                    <div style="padding: 0% 5%;">
+                        <h3 style="line-height: 7vmin;font-size: 3vmin;border-bottom: 2px solid rgb(126, 126, 126);">(
+                            <span style="color: rgb(250, 85, 43);">OpenCV
+                                開發</span> )行李箱智能底座
+                        </h3>
+
+                        <div class="mx-auto" style="font-size: 2vmin;">
+                            畢業專題 <span style="font-size: 3vmin;color: orange;">佳作</span>
+                            <br>使用攝像頭，透過影像辨識實現功能。
+                            <br>功能 1. 辨識手勢，進行前後左右移動。
+                            <br>功能 2. 偵測目標，自動跟隨該目標移動。
+                        </div>
+                        <a class="works-link" href="opencvWork.html"><img src="images/works/arrow.png" alt="">&ensp;&ensp;LEARN
+                            MORE</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End works -->
+            <!-- Works -->
+            <div class="col-12 col-lg-6" style="padding: 5% 5%; display: flex;">
+                <div class="work" style="border-radius: 7px;overflow: hidden;">
+                    <div class="text-center">October, 2020 ~ November, 2020</div>
+                    <img src="images/works/game4.png" alt="">
+
+                    <div style="padding: 0% 5%;">
+                        <h3 style="line-height: 7vmin;font-size: 3vmin;border-bottom: 2px solid rgb(126, 126, 126);">
+                            (<span style="color: rgb(250, 85, 43);">Unity
+                                開發</span>)2D 戰機遊戲 </h3>
+
+                        <div class=" mx-auto" style="font-size: 2vmin;">
+                            主角會自動射擊子彈，撿取子彈道具可增加射擊子彈數量，撿取技能道具可拖曳施放招式。 大絕CD結束，可點擊施放大絕。
+                            操控主角閃避敵人與砲火，怪物一波一波來襲將最後BOSS大蜈蚣擊倒即可獲勝。
+                        </div>
+                        <a class="works-link" href="unity2dWork.html"><img src="images/works/arrow.png" alt="">&ensp;&ensp;LEARN
+                            MORE</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End works -->
+            <!-- Works -->
+            <div class="col-12 col-lg-6" style="padding: 5% 5%; display: flex;">
+                <div class="work" style="border-radius: 7px;overflow: hidden;">
+                    <div class="text-center">February, 2021 ~ June, 2020</div>
+                    <img src="images/works/work5-3.PNG" alt="">
+
+                    <div style="padding: 0% 5%;">
+                        <h3 style="line-height: 7vmin;font-size: 3vmin;border-bottom: 2px solid rgb(126, 126, 126);">
+                            (<span style="color: rgb(250, 85, 43);">Unity
+                                開發</span>)3D 多人連線槍戰遊戲</h3>
+
+                        <div class=" mx-auto" style="font-size: 2vmin;">
+                            撿取地上的散落的槍與對手互相對戰
+                            <br>撿取技能道具將可以施放該技能
+                            <br>還有紅藥水提供玩家恢復部分血量
+                        </div>
+                        <a class="works-link" href="unity3dWork.html"><img src="images/works/arrow.png" alt="">&ensp;&ensp;LEARN
+                            MORE</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End works -->
+            <!-- Works -->
+            <div class="col-12 col-lg-6" style="padding: 5% 5%; display: flex;">
+                <div class="work" style="border-radius: 7px;overflow: hidden;">
+                    <div class="text-center">March, 2021 ~ Updating</div>
+                    <img src="images/works/work6-1.PNG" alt="">
+
+                    <div style="padding: 0% 5%;">
+                        <h3 style="line-height: 7vmin;font-size: 3vmin;border-bottom: 2px solid rgb(126, 126, 126);">
+                            (<span style="color: rgb(250, 85, 43);">Unity
+                                開發</span>)自製 教學影片</h3>
+
+                        <div class=" mx-auto" style="font-size: 2vmin;">
+                            在開發遊戲中，順便拍下影片記錄過程，順便給一些有興趣的人學習!!
+                            主要是第三人稱遊戲槍戰內容。
+                        </div>
+                        <a class="works-link" href="teachingVideoWork.html"><img src="images/works/arrow.png" alt="">&ensp;&ensp;LEARN
+                            MORE</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End works -->
+            <!-- Works -->
+            <div class="col-12 col-lg-6" style="padding: 5% 5%; display: flex;">
+                <div class="work" style="border-radius: 7px;overflow: hidden;">
+                    <div class="text-center">May, 2020 ~ June, 2020</div>
+                    <img src="images/works/work3-5.PNG" alt="">
+
+                    <div style="padding: 0% 5%;">
+                        <h3 style="line-height: 7vmin;font-size: 3vmin;border-bottom: 2px solid rgb(126, 126, 126);">
+                            (<span style="color: rgb(250, 85, 43);">網頁開發</span>)物品借用與登錄系統</h3>
+
+                        <div class=" mx-auto" style="font-size: 2vmin;">
+                            1.首頁瀏覽
+                            <br>2.物品列表查詢
+                            <br>3.填寫借用單
+                            <br>4.查看審核結果
+                            <br>5.管理者登入介面： (1)審核
+                             (2)管理物品
+                             (3)查詢借用紀錄
+                             (4)查詢歸還紀錄
+                             (5)新增管理員
+                             (6)管理公告
+                        </div>
+                        <a class="works-link" href="webItemBorrowingWork.html"><img src="images/works/arrow.png" alt="">&ensp;&ensp;LEARN
+                            MORE</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End works -->
+            <!-- Works -->
+            <div class="col-12 col-lg-6" style="padding: 5% 5%; display: flex;">
+                <div class="work" style="border-radius: 7px;overflow: hidden;">
+                    <div class="text-center">April, 2021 ~ May, 2021</div>
+                    <img src="images/works/work4-2.PNG" alt="">
+
+                    <div style="padding: 0% 5%;">
+                        <h3 style="line-height: 7vmin;font-size: 3vmin;border-bottom: 2px solid rgb(126, 126, 126);">
+                            (<span style="color: rgb(250, 85, 43);">網頁開發</span>)多拉A夢幼兒園</h3>
+
+                        <div class=" mx-auto" style="font-size: 2vmin;">
+                            1.首頁瀏覽
+                              (1)最新公告
+                              (2)幼兒園新聞
+                            <br>2.關於我們
+                              (1)教育理念
+                              (2)校園介紹
+                              (3)師資陣容
+                            <br>3.招生訊息
+                              (1)招生訊息
+                              (2)入學FAQ
+                              (3)收退費辦法
+                            <br>4.教學課程
+                              (1)生活實踐班
+                              (2)專注力訓練
+                            <br>5.家長專區
+                              (1)接送辦法
+                              (2)聯絡我們
+                            <br>6.申請入學
+                            <br>7.活動相簿區
+                        </div>
+                        <a class="works-link" href="webKindergartenWork.html"><img src="images/works/arrow.png" alt="">&ensp;&ensp;LEARN
+                            MORE</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End works -->
+            <!-- Works -->
+            <div class="col-12 col-lg-6" style="padding: 5% 5%; display: flex;">
+                <div class="work" style="border-radius: 7px;overflow: hidden;">
+                    <div class="text-center">May, 2021 ~ June, 2021</div>
+                    <img src="images/works/poker01.PNG" alt="">
+
+                    <div style="padding: 0% 5%;">
+                        <h3 style="line-height: 7vmin;font-size: 3vmin;border-bottom: 2px solid rgb(126, 126, 126);">
+                            (<span style="color: rgb(250, 85, 43);">網頁開發</span>)撲克牌遊戲</h3>
+
+                        <div class=" mx-auto" style="font-size: 2vmin;">
+                            規則說明
+                            <br>&ensp;&ensp;中間牌桌，隨機產生6張撲克牌
+                            <br>&ensp;&ensp;勝負條件：
+                            <br>&ensp;&ensp;1.玩家出的牌與電腦同樣顏色，比大
+                            <br>&ensp;&ensp;2.玩家出的牌與電腦不同顏色，比小
+                            <br>&ensp;&ensp;3.同樣的牌，平手
+                            <br>&ensp;&ensp;4.比較獲勝分數得1分，平手各得1分
+                            <br>&ensp;&ensp;5.三張牌出完，分數較高者獲勝
+                            <br>&ensp;&ensp;<span class="text-danger">洗牌</span>：可以重新產生6張牌
+                            <br>&ensp;&ensp;<span style="color:orange">發牌</span>：將這6張牌，隨機分配給電腦與玩家
+                            <br>&ensp;&ensp;<span class="text-success">出牌</span>：選擇完欲出的牌，點選出牌，即可比拚!
+                        </div>
+                        <a class="works-link" href="webPokerWork.html"><img src="images/works/arrow.png" alt="">&ensp;&ensp;LEARN
+                            MORE</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End works -->
+        </div>
+        <!-- End basic information -->
+
+
+    </div>
+    <!-- End Main -->
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

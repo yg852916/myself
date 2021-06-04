@@ -1,0 +1,473 @@
+!
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        .myNavbar li {
+            background-color: rgba(102, 102, 102, 0.7);
+            font-family: 'Noto Sans TC', sans-serif;
+            border-radius: 0% !important;
+            font-size: 2vmin;
+            font-weight: bold;
+            color: white;
+        }
+
+        .myNavbar li a {
+            padding: 25px 50px !important;
+
+        }
+
+        .myNavbar li:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .myNavbar-active,
+        .myNavbar-active a {
+            background-color: white !important;
+            color: black !important;
+        }
+
+        #avatar {
+            width: 130px;
+            overflow: hidden;
+            border-radius: 100%;
+            padding: 3px;
+            border: solid 2px rgba(255, 255, 255, 0.25);
+        }
+
+        #avatar img {
+            border-radius: 100%;
+            width: 100%;
+        }
+
+        #avatar:hover img {
+            transition: 0.2s;
+            transform: scale(1.1);
+        }
+
+        .home-myIntroduction {
+            line-height: 30px;
+            font-weight: bold;
+        }
+
+        .home-myIntroduction-header {
+            border-bottom: 2px solid rgb(52, 83, 151);
+            width: 80%;
+            font-size: 30px;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+
+        .home-photo {
+            margin-top: 10px;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0) inset;
+            color: rgb(141, 136, 136);
+        }
+
+        .home-photo:hover {
+            background: rgba(75, 71, 71, 0.5);
+            box-shadow: 0px 0px 10px gold inset !important;
+            color: rgb(184, 179, 179);
+        }
+
+        .home-photo-border {
+            border-color: rgb(80, 75, 75);
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        .bg-none {
+            background: none;
+        }
+
+        .work {
+            font-size: 2vmin;
+            background-color: #353849;
+        }
+
+        .work img {
+            width: 100%;
+        }
+
+        .container {
+            padding: 0% 0% !important;
+
+        }
+
+        .works-link {
+            text-decoration: none !important;
+            color: rgb(187, 187, 187);
+            line-height: 80px;
+            font-weight: 700;
+        }
+
+        .works-link img {
+            height: 40px;
+            width: 40px;
+            border: 2px solid rgb(126, 126, 126);
+            border-radius: 100%;
+            padding: 5px 5px;
+        }
+
+        .works-link:hover {
+            color: white !important;
+        }
+
+        .works-link:hover img {
+            background-color: rgba(68, 68, 68, 0.65);
+        }
+
+        .certificate-color-bg {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            transition: 0.5s;
+        }
+
+        .certificate-color-bg div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 3vmin;
+            font-weight: bold;
+        }
+
+        .certificate:hover .certificate-color-bg {
+            background-color: rgba(0, 0, 0, 0) !important;
+
+        }
+
+        .certificate:hover span {
+            font-size: 0px;
+            transition: 0.5s;
+        }
+
+        .certificate-link {
+            padding: 0px 2px;
+            border-radius: 0px;
+            border: none;
+            border-bottom: 4px solid #595a5a;
+            color: white;
+
+            background: none;
+            transition: 0.3s;
+            font-size: 2vmin;
+        }
+
+        .certificate-link:hover {
+            border-radius: 24px;
+
+            background-color: #5a5a5a;
+            color: white;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body class="pb-4" style="background: url(images/home/home-bg1.jpg); background-size:cover;">
+
+    <!-- header -->
+    <div class="container-fluid col-12 col-md-9 mx-auto row" style="padding-top: 5%;">
+        <div class="col-12 col-lg-8">
+            <h1 style="color:white;font-weight: 700;font-size: 10vmin;margin-bottom: 3vmin;">This is my web!</h1>
+            <footer style="font-size: 20px;color: rgb(139, 139, 139);font-weight: bold;line-height: 40px;">Wishing
+                you
+                every second of your life is a happy one!!</footer>
+
+        </div>
+        <div class="col-12 col-lg-4 mt-auto mb-auto" style="text-align: center;">
+            <div
+                style="color: rgb(212, 211, 211);display: inline-block;font-size: 3vmin;font-weight: bold;vertical-align:middle;text-align: right;">
+                羅仁智
+                <br>
+                <span
+                    style="border-top: 2px dashed rgb(126, 125, 125);color: white;font-size: 2vmin;font-weight: 900;letter-spacing: 3px;">JULY
+                    11, 1998</span>
+            </div>
+            <div style="display: inline-block;vertical-align:middle;" id="avatar">
+                <img src="images/home/head.jpg" alt="...">
+            </div>
+            <footer
+                style="font-size: 20px;color: rgb(139, 139, 139);font-weight: bold;line-height: 40px;margin-bottom: 5vmin;"
+                class="blockquote-footer animated fadeInRightBig"><cite title="Source Title">畢業於 國立虎尾科技大學 <br>資訊工程系
+                    2021/06</cite></footer>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- My Nav -->
+    <div class="container-fluid col-12 col-md-9 mx-auto p-0">
+        <nav class="p-0 navbar navbar-expand-lg navbar-dark bg-none">
+            <button class="ml-auto navbar-toggler bg-secondary" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="background-color: rgba(102, 102, 102, 0.7);">
+                <ul class="myNavbar navbar-nav">
+                    <div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">關於<span class="sr-only">(current)</span></a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="works.html">作品集</a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="grades.html">在校成績</a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="nav-item myNavbar-active">
+                            <a class="nav-link" href="certificate.html">證照</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End My Nav -->
+
+
+    <!-- Main -->
+    <div class="container-fluid col-12 col-md-9 mx-auto p-0"
+        style="background-color: white;color: rgb(214, 214, 214);">
+        <!-- basic information -->
+        <div style="height: 20px;background-color: white;">
+        </div>
+        <div class="row m-0 justify-content-center" style="background-color: #2e3141;">
+            <!-- certificate -->
+            <div class="certificate col-12 col-lg-4 p-0" style="position: relative;">
+                <div>
+                    <img style="width: 100%;" src="images/certificate/電腦硬體裝修乙.png" alt="">
+                </div>
+                <!-- Button trigger modal -->
+                <div class="certificate-color-bg" style="background-color: rgba(163, 146, 68, 0.959);" type="button"
+                    class="btn btn-primary" data-toggle="modal" data-target="#cer1">
+                    <div>
+                        <span>
+                            乙級<br>
+                            <span style="border-top: 2px solid white;">
+                                電腦硬體裝修技術士
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <!-- End Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="cer1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div style="padding: 5% 5%;background-color: rgb(75, 74, 74);font-size: 2vmin;">
+                                乙級為具備能作微電腦及週邊設備之故障測試、判斷和維修，亦能控制和應用微電腦週邊設備之介面的能力。
+                                <div class="text-center" style="padding-top: 5%;">
+                                    <button type="submit" class="btn certificate-link"
+                                        onclick="window.open('http://www.1111edu.com.tw/licence_content.php?autono=386')">官網連結</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal -->
+            </div>
+            <!-- End certificate -->
+            <!-- certificate -->
+            <div class="certificate col-12 col-lg-4 p-0" style="position: relative;">
+                <div>
+                    <img style="width: 100%;" src="images/certificate/電腦硬體裝修丙.png" alt="">
+                </div>
+                <!-- Button trigger modal -->
+                <div class="certificate-color-bg" style="background-color: rgba(68, 163, 158, 0.959);" type="button"
+                    data-toggle="modal" data-target="#cer2">
+                    <div>
+                        <span>
+                            丙級<br>
+                            <span style="border-top: 2px solid white;">
+                                電腦硬體裝修技術士
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <!-- End Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="cer2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div style="padding: 5% 5%;background-color: rgb(75, 74, 74);font-size: 2vmin;">
+                                丙級為具備從事微電腦及週邊設備操作、組合、測試及簡易維修，並能安裝完成微電腦系統之能力。
+                                <div class="text-center" style="padding-top: 5%;">
+                                    <button type="submit" class="btn certificate-link"
+                                        onclick="window.open('http://www.1111edu.com.tw/licence_content.php?autono=387')">官網連結</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal -->
+            </div>
+            <!-- End certificate -->
+            <!-- certificate -->
+            <div class="certificate col-12 col-lg-4 p-0" style="position: relative;">
+                <div>
+                    <img style="width: 100%;" src="images/certificate/網路架設丙.png" alt="">
+                </div>
+                <!-- Button trigger modal -->
+                <div class="certificate-color-bg" style="background-color: rgba(163, 87, 68, 0.959);" type="button"
+                    data-toggle="modal" data-target="#cer3">
+                    <div>
+                        <span>
+                            丙級<br>
+                            <span style="border-top: 2px solid white;">
+                                路架設技術士
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <!-- End Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="cer3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div style="padding: 5% 5%;background-color: rgb(75, 74, 74);font-size: 2vmin;">
+                                丙級需具備從事網路佈線、網路元件安裝及網路應用軟體操作的能力。
+                                <div class="text-center" style="padding-top: 5%;">
+                                    <button type="submit" class="btn certificate-link"
+                                        onclick="window.open('http://www.1111edu.com.tw/licence_content.php?autono=388')">官網連結</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal -->
+            </div>
+            <!-- End certificate -->
+            <!-- certificate -->
+            <div class="certificate col-12 col-lg-6 p-0" style="position: relative;">
+                <div>
+                    <img style="width: 100%;" src="images/certificate/AMA.png" alt="">
+                </div>
+                <!-- Button trigger modal -->
+                <div class="certificate-color-bg" style="background-color: rgba(125, 68, 163, 0.959);" type="button"
+                    data-toggle="modal" data-target="#cer4">
+                    <div>
+                        <span>
+                            高級<br>
+                            <span style="border-top: 2px solid white;">
+                                AMA先進微控制器應用認證
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <!-- End Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="cer4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div style="padding: 5% 5%;background-color: rgb(75, 74, 74);font-size: 2vmin;">
+                                微控制器(MCU)乃是一種無所不在的嵌入式控制晶片，負責智能控制、網路連結、無線傳輸、人機介面互動系統，舉凡玩具、家電、汽車等都不難見其蹤跡。台灣創新科技管理發展協會(ITM協會)與國內專業微控制器IC設計領導廠商──盛群半導體(HOLTEK)，協同產學研等單位，經由標準化認證過程培育優秀微控制器應用科技人才，更期許藉增加學生實務經驗，提升就業競爭力。
+                                <br> ■ 電路配線能力
+                                <br> ■ 馬達控制能力
+                                <br> ■ PWM 控制能力
+                                <br> ■ 鍵盤掃描控制能力
+                                <br> ■ 鍵盤掃描控制能力
+                                <br> ■ 韌體程式設計與撰寫能力
+                                <div class="text-center" style="padding-top: 5%;">
+                                    <button type="submit" class="btn certificate-link"
+                                        onclick="window.open('http://www.1111edu.com.tw/licence_content.php?autono=1380')">官網連結</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal -->
+            </div>
+            <!-- End certificate -->
+            <!-- certificate -->
+            <div class="certificate col-12 col-lg-6 p-0" style="position: relative;">
+                <div>
+                    <img style="width: 100%;" src="images/certificate/MTA1.png" alt="">
+                </div>
+                <!-- Button trigger modal -->
+                <div class="certificate-color-bg" style="background-color: rgba(68, 104, 163, 0.959);" type="button"
+                    data-toggle="modal" data-target="#cer5">
+                    <div>
+                        <span>
+                            Microsoft MTA<br>
+                            <span style="border-top: 2px solid white;">
+                                Networking Fundamentals
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <!-- End Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="cer5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div style="padding: 5% 5%;background-color: rgb(75, 74, 74);font-size: 2vmin;">
+                                應試者對於 Windows Server、Windows 基礎網路、網路管理工具、DNS、TCP/IP、名稱解析流程、網路協定和拓撲，應具備一些實際使用經驗。
+                                <div class="text-center" style="padding-top: 5%;">
+                                    <button type="submit" class="btn certificate-link"
+                                        onclick="window.open('http://certification.gotop.com.tw/CertificationItem.aspx?SubID=12')">官網連結</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal -->
+            </div>
+            <!-- End certificate -->
+        </div>
+        <!-- End basic information -->
+
+
+    </div>
+    <!-- End Main -->
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
